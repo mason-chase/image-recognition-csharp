@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.NetStandard.Tests", "Mc2.Image.Recognition.NetStandard.Tests\Mc2.Image.Recognition.NetStandard.Tests.csproj", "{41B7E0FE-75A9-49AD-B3FC-4E55D7C9A299}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2C31F2E-F109-4BC7-9924-DFAE143669EB} = {B2C31F2E-F109-4BC7-9924-DFAE143669EB}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.Image.Recognition.NetStandard", "Mc2.Image.Recognition.NetStandard\Mc2.Image.Recognition.NetStandard.csproj", "{F86B558A-CC3D-4A15-B78B-D884D51543CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.NetStandard", "Mc2.Image.Recognition.NetStandard\Mc2.Image.Recognition.NetStandard.csproj", "{F86B558A-CC3D-4A15-B78B-D884D51543CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15DA5EB8-21D2-4833-BA61-812AE1149C57}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,6 +17,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Mc2.Image.Recognition.NetStandard.psd = Mc2.Image.Recognition.NetStandard.psd
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azihub.Utilities.Base", "..\appstract-csharp\azihub-utilities-base-csharp\Azihub.Utilities.Base\Azihub.Utilities.Base.csproj", "{B2C31F2E-F109-4BC7-9924-DFAE143669EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.WebTest.Server", "Mc2.Image.Recognition.WebTest\Server\Mc2.Image.Recognition.WebTest.Server.csproj", "{70CB18FE-F123-4652-82C1-E2D8A021597E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.WebTest.Client", "Mc2.Image.Recognition.WebTest\Client\Mc2.Image.Recognition.WebTest.Client.csproj", "{D2415E69-E248-41D9-B55A-3A7AC1EC9CEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.WebTest.Shared", "Mc2.Image.Recognition.WebTest\Shared\Mc2.Image.Recognition.WebTest.Shared.csproj", "{123D16C5-610C-4680-A925-99BEAF4B786B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.Image.Recognition.WebTest.DataAccessLayer", "Mc2.Image.Recognition.WebTest\Mc2.Image.Recognition.WebTest.DataAccessLayer\Mc2.Image.Recognition.WebTest.DataAccessLayer.csproj", "{B58B5EEE-22A2-4D8E-AC8B-4F3FE8E975EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +42,26 @@ Global
 		{F86B558A-CC3D-4A15-B78B-D884D51543CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86B558A-CC3D-4A15-B78B-D884D51543CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86B558A-CC3D-4A15-B78B-D884D51543CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C31F2E-F109-4BC7-9924-DFAE143669EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C31F2E-F109-4BC7-9924-DFAE143669EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C31F2E-F109-4BC7-9924-DFAE143669EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C31F2E-F109-4BC7-9924-DFAE143669EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CB18FE-F123-4652-82C1-E2D8A021597E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CB18FE-F123-4652-82C1-E2D8A021597E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CB18FE-F123-4652-82C1-E2D8A021597E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CB18FE-F123-4652-82C1-E2D8A021597E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2415E69-E248-41D9-B55A-3A7AC1EC9CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2415E69-E248-41D9-B55A-3A7AC1EC9CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2415E69-E248-41D9-B55A-3A7AC1EC9CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2415E69-E248-41D9-B55A-3A7AC1EC9CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123D16C5-610C-4680-A925-99BEAF4B786B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123D16C5-610C-4680-A925-99BEAF4B786B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123D16C5-610C-4680-A925-99BEAF4B786B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123D16C5-610C-4680-A925-99BEAF4B786B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58B5EEE-22A2-4D8E-AC8B-4F3FE8E975EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58B5EEE-22A2-4D8E-AC8B-4F3FE8E975EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58B5EEE-22A2-4D8E-AC8B-4F3FE8E975EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58B5EEE-22A2-4D8E-AC8B-4F3FE8E975EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,8 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azihub.Utilities.Base" Version="0.1.11" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\appstract-csharp\azihub-utilities-base-csharp\Azihub.Utilities.Base\Azihub.Utilities.Base.csproj" />
   </ItemGroup>
 
 </Project>

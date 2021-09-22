@@ -1,11 +1,14 @@
 ﻿using Azihub.Utilities.Base.Extensions.ByteArray;
 using Mc2.Image.Recognition.NetStandard.Interfaces;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Mc2.Image.Recognition.NetStandard.DocumentModels
 {
     public class Document : IDocument
     {
+        [Obsolete("Use parameters in overload",true)]
+        public Document() { }
         /// <summary>
         /// Serialize existing data
         /// </summary>
@@ -38,6 +41,7 @@ namespace Mc2.Image.Recognition.NetStandard.DocumentModels
             ByteArray = byteArray;
         }
         
+        [Key]
         public Guid Guid { get; }
 
         public string Sha256 { get; }

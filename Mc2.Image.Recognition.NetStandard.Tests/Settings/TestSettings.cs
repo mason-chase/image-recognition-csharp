@@ -13,7 +13,7 @@ namespace Mc2.Image.Recognition.NetStandard.Tests
     {
         static TestSettings()
         {
-            DotEnv.Load();
+            DotEnv.Load(".env");
             GoogleVisionCredentials = DotEnv.Load<GoogleVisionCredentials>();
         }
 

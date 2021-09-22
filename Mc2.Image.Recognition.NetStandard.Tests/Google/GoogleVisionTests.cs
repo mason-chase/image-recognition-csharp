@@ -13,6 +13,7 @@ namespace Mc2.Image.Recognition.NetStandard.Tests.Google
         public void GetGoogleVisionData()
         {
             GoogleVisionCredentials test = TestSettings.GoogleVisionCredentials;
+            test = TestSettings.GoogleVisionCredentials;
 
         }    
     }

@@ -9,15 +9,15 @@ namespace Mc2.Image.Recognition.NetStandard.Google
 {
     public class GoogleDriver : IDocumentOcrProcessor
     {
-        private readonly GoogleVisionCredentials _credential;
+        private readonly GoogleVisionCredentials _credentials;
         private readonly ILogger<GoogleDriver> _logger;
 
         public GoogleDriver(GoogleVisionCredentials credentials, ILogger<GoogleDriver> logger) 
         {
-            _credential = credentials;
+            _credentials = credentials;
             _logger = logger;
 #if DEBUG
-            _logger.LogDebug("Loaded Google Driver with credentials:\n"+ credentials);
+            _logger.LogDebug("Loaded Google Driver with credentials:\n"+ _credentials);
 #endif
         }
 
